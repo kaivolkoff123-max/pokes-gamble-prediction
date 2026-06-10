@@ -1,0 +1,11 @@
+from collections import Counter
+
+last = history[-1]
+
+possible = transitions[last]
+
+count = Counter(possible)
+
+prediction = count.most_common(1)[0][0]
+
+print("Prediction:", prediction)
